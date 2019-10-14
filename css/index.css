@@ -1,7 +1,7 @@
 body {
     background-image: url(../imagens/img1.jpg);
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
 }
@@ -231,7 +231,7 @@ input[type="submit"]:hover {
 }
 
 .quadro {
-    sbackground: #FFF;
+    /* sbackground: #FFF; */
 }
 
 .central {

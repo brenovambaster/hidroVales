@@ -18,7 +18,21 @@
       <div class="title">
         <h3 class="text-center"> <img src="imagens/hidrovales.png" alt="hidrovales" width="190px" height="100px" </h3> </div> <div class="">
       </div>
-      <form action="POST" method="validaLogin.php" class="form-group">
+      <?php
+      if (isset($_GET["errorLogin"])) { ?>
+
+        <div class="alert alert-danger alert-dismissible fade show mx-auto " role="alert">
+          Usuário inválido! Por favor, verifique o e-mail e a senha e tente novamente.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      <?php
+      }
+
+      ?>
+
+      <form action="validarLogin.php" method="POST" class="form-group">
         <div class="ml-3">
           <label for="email_login"><b>Seu e-mail: </b></label>
           <input class="col-11 mt-2 rounded border-primary" id="email_login" name="email_login" required="required" type="email" placeholder="teste.ifnmg@gmail.com" />

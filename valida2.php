@@ -1,7 +1,7 @@
 <?php
 session_start();
 //Incluindo a conexão com banco de dados
-include_once("conexao.php");
+include_once("bd_conexao.php");
 //O campo usuário e senha preenchido entra no if para validar
 if ((isset($_POST['email'])) && (isset($_POST['senha']))) {
 	$usuario = mysqli_real_escape_string($conn, $_POST['email']); //Escapar de caracteres especiais, como aspas, prevenindo SQL injection
@@ -20,11 +20,11 @@ if ((isset($_POST['email'])) && (isset($_POST['senha']))) {
 		$_SESSION['usuarioNiveisAcessoId'] = $resultado['niveis_acesso_id'];
 		$_SESSION['usuarioEmail'] = $resultado['email'];
 		if ($_SESSION['usuarioNiveisAcessoId'] == "1") {
-			header("Location: administrativo.php");
+			header("Location: adm/administrativo.php");
 		} elseif ($_SESSION['usuarioNiveisAcessoId'] == "2") {
-			header("Location: colaborador.php");
+			header("Location: colaborador/colaborador.php");
 		} else {
-			header("Location: cliente.php");
+			header("Location: cliente/cliente.php");
 		}
 		//Não foi encontrado um usuario na tabela usuário com os mesmos dados digitado no formulário
 		//redireciona o usuario para a página de login
