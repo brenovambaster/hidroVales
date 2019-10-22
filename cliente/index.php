@@ -43,8 +43,7 @@
     </div>
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-3">Welcome client</h1>
-            <p> <b>Nome De usuário:</b> <?php echo   $_SESSION['nomeUser']; ?> </p>
+            <h1 class="display-5">Bem vindo <b><?php  echo   $_SESSION['nomeUser']; ?> </b></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur felis vel ex aliquet, eu tincidunt sapien consectetur. Phasellus elementum magna eget velit ornare posuere.</p>
             <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
         </div>
