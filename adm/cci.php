@@ -9,12 +9,19 @@
 <head>
 
     <meta charset="utf-8">
+
     <link rel="icon" type="imagem/png" href="../imagens/favicon.ico" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <meta name="description" content="">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+
     <meta name="generator" content="Jekyll v3.8.5">
+
     <title>Administração dos aplicativos </title>
 
 
@@ -35,7 +42,7 @@
 
     <div class="container mt-5">
 
-        <form action="ETo.php" method="GET">
+        <form action="cci.php" method="GET">
 
             <h3 class="text-center">Preencha os dados abaixo:</h3>
 
@@ -43,9 +50,9 @@
 
                 <div class="form-group col-md-4">
 
-                    <label for="tempMin">Temperatura mínima (C°):</label>
+                    <label for="tempfunc">Tempo de Funcionamento do Sistema:</label>
 
-                    <input type="number" class="form-control" name="tempMin" id="tempMin" required>
+                    <input type="number" class="form-control" name="tempfunc" id="tempfunc">
 
 
 
@@ -53,29 +60,19 @@
 
                 <div class="form-group col-md-4">
 
-                    <label for="tempMax">Temperatura máxima (C°):</label>
+                    <label for="potconj">Potência do conjunto moto bomba:</label>
 
-                    <input type="number" class="form-control" name="tempMax" id="tempMax" required>
-
-                </div>
-
-                <div class=" form-group col-md-4">
-
-                    <label for="lat">Latitude em graus :</label>
-
-                    <input type="float" name="lat" id="lat" class="form-control" required>
+                    <input type="float" class="form-control" name="potconj" id="potconj">
 
                 </div>
 
                 <div class=" form-group col-md-4">
 
-                    <label for="data">Data:</label>
+                    <label for="lat">Preço do Kwh:</label>
 
-                    <input type="date" name="data" id="data" class="form-control" required>
+                    <input type="float" name="pkwh" id="pkwh" class="form-control">
 
                 </div>
-
-
 
             </div>
 

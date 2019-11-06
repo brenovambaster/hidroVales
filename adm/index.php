@@ -1,5 +1,4 @@
-<?php // include('segurancaAdm.php'); 
-?>
+<?php include('segurancaAdm.php'); ?>
 <!doctype html>
 <html lang="en">
 
@@ -12,8 +11,6 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
     <title>Administração dos aplicativos </title>
-
-
     <!-- Bootstrap core CSS -->
 </head>
 
@@ -21,11 +18,9 @@
     <?php include('nav.php'); ?>
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-5"><b><?php echo $_SESSION['nomeUser']; ?> </b></h1>
-
-            <p>Seja bem vindo ao aplicativo que ainda se encontra em fase de testes desenvolvido pelo HidroVales.</p>
+            <h1 class="display-5"><b> <p> <?php echo $_SESSION['nomeUser']; ?> </p> </b>
+            <p>Seja bem vindo ao aplicativo que ainda se encontra em fase de testes desenvolvido pelo grupo de pesquisa HidroVales.</p>
             <p><a class="btn btn-primary " href="https://hidrovales.com.br/sobre" role="button" target="blank">Saiba Mais &raquo;</a></p>
-
         </div>
 
     </div>
@@ -33,19 +28,19 @@
         <!-- Example row of columns -->
         <div class="row">
             <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <h2>Irrigação</h2>
+                <p><justify>A irrigação constitui um conjunto de operações que é necessário ao atendimento das necessidades de água para as plantas-solo.Os sistemas de irrigação são um conjunto de elementos que se integram e que atuam em conjunto visando um objetivo geral. Antes do início do programa de manejo da irrigação, é importante que se conheça a fisiologia da planta, ou seja, saber quais os períodos críticos de consumo de água e seus reflexos na produtividade.. </p></justify
+                <p><a class="btn btn-secondary" href="http://www.revistaagropecuaria.com.br/2015/03/26/importancia-do-manejo-de-sistemas-de-irrigacao/" role="button" target="blank">Saiba mais &raquo;</a></p>
             </div>
             <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <h2>HidroVales</h2>
+                <p>O GRUPO DE PESQUISA EM RECURSOS HÍDRICOS E AMBIENTAIS DO NORTE DE MINAS (HIDROVALES) surgiu em virtude da elevada demanda de alunos do ensino médio e superior para a orientação em projetos de pesquisa, extensão e estágios. Também serviu como estímulo, à criação, a carência por tecnologias e pesquisas aplicadas às condições dos vales do Jequitinhonha, Rio Pardo, Mucuri e São Francisco, áreas de abrangência do IFNMG.</p>
+                <p><a class="btn btn-secondary " href="https://hidrovales.com.br/sobre" role="button" target="blank">Saiba Mais &raquo;</a></p>
             </div>
             <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <h2>Deseja Entrar em contato ? </h2>
+                <p>Para conhecer nossas condições e serviços entre em contato pelo telefone (38) 3871-7000, ou pelo e-mail hidrovales@hidrovales.com. </p>
+                 <p><a class="btn btn-secondary " href="https://hidrovales.com.br/contato" role="button" target="blank">Entrar em Contato &raquo;</a></p>
             </div>
         </div>
 
@@ -53,14 +48,11 @@
 
     </div> <!-- /container -->
 
-
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 </body>
 
 </html>

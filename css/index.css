@@ -1,5 +1,5 @@
 body {
-    background-image: url(../imagens/img1.jpg);
+    background-image: url("../imagens/img1.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -178,6 +178,21 @@ input[type="submit"]:hover {
 #paralogin:target~.content #cadastro {
     -webkit-animation-name: fadeOutLeft;
     animation-name: fadeOutLeft;
+}
+.animacao {
+    animation-name: move;
+    animation-duration: 1000ms;
+}
+
+@keyframes move {
+    from {
+        opacity: 0;
+        transform: translateY(-75%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -13,7 +13,7 @@
 
 <body>
 
-  <div class="container   col-sm-7 col-md-6 col-lg-4  mt-5 central">
+  <div class="animacao container   col-sm-7 col-md-6 col-lg-4  mt-5 central">
     <div class="rounded quadro ">
       <div class="title">
         <h3 class="text-center"> <img src="imagens/hidrovales.png" alt="hidrovales" width="190px" height="100px" </h3> </div> <div class="">
@@ -35,7 +35,7 @@
       <form action="validarLogin.php" method="POST" class="form-group">
         <div class="ml-3">
           <label for="email_login"><b>Seu e-mail: </b></label>
-          <input class="col-11 mt-2 rounded border-primary" id="email_login" name="email_login" required="required" type="email" placeholder="teste.ifnmg@gmail.com" />
+          <input class="col-11 mt-2 rounded border-primary" id="email_login" name="email_login" required="required" type="email" placeholder="teste@aluno.ifnmg.edu.br" />
         </div>
 
         <div class="ml-3">
